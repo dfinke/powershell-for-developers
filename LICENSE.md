@@ -9,3 +9,6 @@ If you feel your use of code examples falls outside fair use or the permission g
 If you are interested in this code, please consider buying a copy of the book, which is available in many formats via oreilly.com: 
 
 [oreilly.com/catalog/0636920024491] [book-link]
+
+[book-link]: http://oreilly.com/catalog/0636920024491
+[permissions@oreilly.com]: mailto:permissions@oreilly.com

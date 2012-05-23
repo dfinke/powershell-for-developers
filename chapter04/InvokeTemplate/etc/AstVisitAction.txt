@@ -1,0 +1,11 @@
+
+    public override AstVisitAction $FunctionName($ParameterName ast)
+    {
+        var method = module.Methods["$FunctionName"];
+        if (method != null)
+        {
+            method.Invoke(ast);
+        }
+        return AstVisitAction.Continue;
+    }
+ 

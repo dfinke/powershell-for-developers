@@ -1,0 +1,14 @@
+<properties>
+    <property>
+    	<type>string</type>
+    	<name>City</name>
+    </property>
+    <property>
+    	<type>string</type>
+    	<name>State</name>
+    </property>
+    <property>
+    	<type>string</type>
+    	<name>Zip</name>
+    </property>    
+</properties>

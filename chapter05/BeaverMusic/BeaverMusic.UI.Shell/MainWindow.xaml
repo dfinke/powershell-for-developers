@@ -1,0 +1,11 @@
+﻿<Window x:Class="BeaverMusic.UI.Shell.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:bmui="http://beavermusic.com/client/ui"
+        xmlns:local="clr-namespace:BeaverMusic.UI.Shell"
+        WindowStartupLocation="CenterScreen"
+        Title="BeaverMusic" Height="350" Width="525">
+    <DockPanel>
+        <bmui:ViewElement Grid.Column="0" ViewType="local:AlbumListView" ViewModelType="local:AlbumListViewModel"/>
+    </DockPanel>
+</Window>

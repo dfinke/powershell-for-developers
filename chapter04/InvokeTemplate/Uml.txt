@@ -1,0 +1,6 @@
+LastName  : string
+FirstName : string
+Age       : int
+City      : string
+State     : string
+Zip       : int

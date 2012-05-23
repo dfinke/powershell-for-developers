@@ -1,0 +1,16 @@
+﻿<Window 
+    x:Class="BeaverMusic.UI.Shell.AlbumEditDialogView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:bmui="http://beavermusic.com/client/ui"
+    xmlns:local="clr-namespace:BeaverMusic.UI.Shell"
+    WindowStartupLocation="CenterScreen"
+    Title="AlbumEditDialogView" Height="300" Width="300">
+    <DockPanel Margin="10,5">
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Margin="5" Width="75" Content="OK" Command="{Binding CommitCommand}" IsDefault="True"/>
+            <Button Margin="5" Width="75" Content="Cancel" Command="{Binding CancelCommand}" IsCancel="True"/>
+        </StackPanel>
+        <bmui:ViewElement ViewType="local:AlbumEditView" ViewModel="{Binding AlbumEditViewModel}" ViewModelCreationStrategy="Inject"/>
+    </DockPanel>
+</Window>

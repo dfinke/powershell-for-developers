@@ -1,0 +1,81 @@
+﻿<Window x:Class="EmbeddedPSConsole.PSConsole"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
+        PreviewKeyDown="Window_PreviewKeyDown"
+        Title="Embedded PowerShell Console" Height="350" Width="725">
+
+    <DockPanel>
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>
+                <Button Content="Run" Click="Run">
+                    <Button.ToolTip>
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold">Run (F5)</TextBlock>
+                            <TextBlock>Runs the PowerShell code in the script pane</TextBlock>
+                        </StackPanel>
+                    </Button.ToolTip>
+                </Button>
+                <Button Content="Clear" Click="Clear">
+                    <Button.ToolTip>
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold">Clear (F12)</TextBlock>
+                            <TextBlock>Clears the output pane</TextBlock>
+                        </StackPanel>
+                    </Button.ToolTip>
+                </Button>
+                <Border BorderThickness="1">
+                    <TextBox x:Name="Artist" Width="125" PreviewKeyDown="Artist_PreviewKeyDown">
+                        <TextBox.ToolTip>
+                            <StackPanel>
+                                <TextBlock FontWeight="Bold">Type a music artist name and press enter</TextBlock>
+                                <TextBlock>Type 'Metallica' and press enter. Populates the ListView in the main screen.</TextBlock>
+                            </StackPanel>
+                        </TextBox.ToolTip>
+                    </TextBox>
+                </Border>
+            </ToolBar>
+        </ToolBarTray>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <TextBox 
+                x:Name="Console" 
+                Background="#FFFFFFFF"
+                Foreground="#FF000000"
+                Grid.Row="0" 
+                FontFamily="Lucida Console" 
+                FontSize="12" 
+                AcceptsReturn="True" 
+                TextWrapping="Wrap"
+                MouseWheel="ConsoleMouseWheel"
+            />
+
+            <GridSplitter 
+                Height="5"
+                Grid.Row="0"
+                Background="LightBlue"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Stretch"
+            />
+
+            <TextBox 
+                Foreground="WhiteSmoke"
+                Background="#FF012456"
+                x:Name="Results" 
+                Grid.Row="1" 
+                FontFamily="Lucida Console"
+                FontSize="12" 
+                IsReadOnly="True" 
+                TextWrapping="Wrap"
+                MouseWheel="ConsoleMouseWheel"
+                HorizontalScrollBarVisibility="Auto"
+                VerticalScrollBarVisibility="Auto"
+            />
+        </Grid>
+    </DockPanel>
+</Window>

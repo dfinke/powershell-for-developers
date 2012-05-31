@@ -1,5 +1,5 @@
 param (
-    $targetDirectory="..\..\C#\BeaverMusic"
+    $targetDirectory="..\chapter05\BeaverMusic"
 )
 
 

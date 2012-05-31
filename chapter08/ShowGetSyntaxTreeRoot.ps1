@@ -1,6 +1,6 @@
 .\Add-RoslynLibraries
 
-$slnFileName = Resolve-Path "..\..\C#\BeaverMusic\BeaverMusic.sln"
+$slnFileName = Resolve-Path "..\chapter05\BeaverMusic\BeaverMusic.sln"
 
 $FirstProject = ([Roslyn.Services.Solution]::Load($slnFileName)).Projects | 
                     Select -First 1

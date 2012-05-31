@@ -1,8 +1,8 @@
 cls
 
-Add-Type -Path "c:\Program Files\Reference Assemblies\Microsoft\Roslyn\v1.0\Roslyn.Services.dll"
+.\Add-RoslynLibraries
 
-$slnFileName = "..\..\C#\BeaverMusic\BeaverMusic.sln"
+$slnFileName = Resolve-Path "..\chapter05\BeaverMusic\BeaverMusic.sln"
 
 $result = ForEach ($Project in ([Roslyn.Services.Solution]::Load($slnFileName)).Projects) {
     ForEach($Document in $Project.DocumentIds) {

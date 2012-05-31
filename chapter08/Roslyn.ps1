@@ -24,4 +24,4 @@ function Get-SLNProject {
     }
 }
 
-Get-SLNProject ..\..\C#\BeaverMusic\BeaverMusic.sln
+Get-SLNProject (Resolve-Path ..\chapter05\BeaverMusic\BeaverMusic.sln)

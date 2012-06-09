@@ -9,5 +9,5 @@ $FirstDocument = $FirstProject.Documents |
     Select -First 1 
 
 $cancelToken = New-Object System.Threading.CancellationToken
-$Root = $FirstDocument.GetSyntaxTree($cancelToken).Root
+$Root = $FirstDocument.GetSyntaxTree($cancelToken).GetRoot($cancelToken)
 $Root.Usings | Select name

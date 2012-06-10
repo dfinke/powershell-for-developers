@@ -2,7 +2,6 @@ param (
     $targetDirectory="..\chapter05\BeaverMusic"
 )
 
-
 Import-Module ShowUI
 
 New-Window -Title "PowerShell/Rosyln Class Viewer" -WindowStartupLocation CenterScreen -Height 500 -Width 800 -Show {

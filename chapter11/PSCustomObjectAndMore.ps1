@@ -1,4 +1,4 @@
-﻿Add-Type -TypeDefinition @"
+Add-Type -TypeDefinition @"
 namespace Example {
     public class Test {
         public string FirstName {get; set;}

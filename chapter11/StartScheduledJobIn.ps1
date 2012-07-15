@@ -1,4 +1,4 @@
-﻿function Start-ScheduledJobIn {
+function Start-ScheduledJobIn {
     param (
         [string]$Name,
         [int]$SecondsFromNow,
@@ -16,5 +16,5 @@
 }
 
 cls
-
+ipmo PSScheduledJob -Force
 Start-ScheduledJobIn TestGetService 5 {Get-Service}

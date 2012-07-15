@@ -1,4 +1,4 @@
-﻿New-Object PSObject -Property @{
+New-Object PSObject -Property @{
     FirstName = "Donald"
     LastName  = "Knuth"
 }

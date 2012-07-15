@@ -16,5 +16,7 @@ function Start-ScheduledJobIn {
 }
 
 cls
-ipmo PSScheduledJob -Force
-Start-ScheduledJobIn TestGetService 5 {Get-Service}
+
+$JobName = "TestGetServiceJob"
+Get-ScheduledJob -Name $JobName -ea 0 | Unregister-ScheduledJob
+Start-ScheduledJobIn $JobName 5 {Get-Service}

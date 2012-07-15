@@ -4,6 +4,10 @@ function Out-Clipboard {
         [string]$text
     )
 
+    Begin {
+        Add-Type -AssemblyName PresentationCore
+    }
+
     Process {
         [System.Windows.Clipboard]::SetText($text)
     }

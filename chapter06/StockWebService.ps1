@@ -18,7 +18,7 @@ function Get-Quote {
         [xml]$result
     }
 }
-
+ 
 #DRRX SPRD IART RFMD VICL SNTA PSMT DRRX CNGL BNVI IART SHLD APPY FFKY TCI BAC SCHW NILE
 
 "IBM", "AAPL", "GM", "GE", "MSFT", "GOOG" |

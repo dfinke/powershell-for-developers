@@ -1,8 +1,10 @@
+param($query = "Obama")
+
 $apiKey = "e91adfa87e8f8026712c4d92b54a0b14:0:39364737"
 
 function Get-SemanticNYT {
 
-    param($query = "obama")
+    param($query)
 
     $uri = "http://api.nytimes.com/svc/semantic/v2/"+
         "concept/search.json?query=$query&api-key=$apiKey"
@@ -28,7 +30,7 @@ function Get-SemanticNYTArticles {
     }
 }
 
-Get-SemanticNYT "Obama" |
+Get-SemanticNYT $query |
     Get-SemanticNYTArticles |
     Where links |
         Select -ExpandProperty article_list |

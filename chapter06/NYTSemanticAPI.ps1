@@ -1,3 +1,4 @@
+#requires -version 3
 param($query = "Obama")
 
 $apiKey = "e91adfa87e8f8026712c4d92b54a0b14:0:39364737"

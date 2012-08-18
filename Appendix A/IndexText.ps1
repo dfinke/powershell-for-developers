@@ -1,7 +1,7 @@
-function SlowTrain($text) {   
+function SlowTrain($text) {
     
     $h = @{}
-    [regex]::split($text.ToLower(), ‘\W+’) | 
+    [regex]::split($text.ToLower(), ï¿½\W+ï¿½) | 
         ForEach {
             $h[$_] =''
         }
@@ -11,7 +11,7 @@ function SlowTrain($text) {
 function FastTrain($text) {
     
     $h = @{}    
-    ForEach ($word in [regex]::split($text.ToLower(), ‘\W+’) )
+    ForEach ($word in [regex]::split($text.ToLower(), ï¿½\W+ï¿½) )
     {
         $h[$word] = ''
     }        

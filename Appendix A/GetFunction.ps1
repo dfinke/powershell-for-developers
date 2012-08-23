@@ -23,4 +23,4 @@ Function Get-Function ([string]$Pattern, [string]$Path="$pwd") {
     }) | Where {$_.FunctionName -match $Pattern}    
 }
 
-Get-Function -Path $PSHOME\Modules\PSDiagnostics | Out-GridView
+Get-Function -Path $PSHOME\Modules\PSDiagnostics | Out-GridView 

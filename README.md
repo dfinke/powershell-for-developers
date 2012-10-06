@@ -1,4 +1,4 @@
-#
+# PowerShell for Developers
 
 Want to perform programming tasks better, faster, simpler, and make them repeatable? 
 Take a deep dive into Windows PowerShell and discover what this distributed automation platform can do. 
